@@ -1,0 +1,36 @@
+@import './base.less';
+@import './color.less';
+@import './fun.less';
+
+input{
+  padding-left: 10px;
+  height: 30px;
+  width: 150px;
+  border: 1px solid @border_color;
+  .x-radius(2px);
+  &.long{
+    width: 220px;
+  }
+}
+input:focus{
+  border: 1px solid @main_theme_color;
+  .x-radius(2px);
+}
+
+// 按钮
+.btn{
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  .x-radius(4px);
+  &:hover{
+    cursor: pointer;
+  }
+  &.primary{
+    background-color: @main_theme_color;
+    color:#fff;
+  }
+}

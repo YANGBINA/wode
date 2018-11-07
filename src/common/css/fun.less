@@ -1,0 +1,17 @@
+// 清除浮动
+.clearfix(){
+  &:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+}
+// 圆角
+.x-radius(@value){
+  -moz-border-radius: @value; /* Firefox */
+  -webkit-border-radius: @value; /* Safari 和 Chrome */
+  border-radius: @value; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+// 阴影
+.x-shadow(@value){
+  -webkit-box-shadow: @value;
+  -moz-box-shadow: @value;
+  box-shadow: @value;
+}
